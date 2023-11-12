@@ -1,5 +1,5 @@
 # Harbor-layout
-Desktop version of layout
+Fully adaptive and fluid layout using the AOS library for dynamic animations, CSS animations were used, the use of DOM technology
 
 The project can be viewed at the link:
 [Tap on!](https://sbl-igor.github.io/Harbor-layout/)

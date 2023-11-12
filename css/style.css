@@ -36,10 +36,34 @@ body {
 
 .box-button__appstore {
     background-color: #28514F;
+    transition: background-color 0.4s ease-in, top 0.1s ease-in;
 }
 
 .box-button__googlestore {
     background-color: #AEB4B6;
+    transition: background-color 0.4s ease-in, top 0.1s ease-in;
+}
+
+/* Animations of buttons */
+
+.box-button__appstore:active {
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+}
+
+.box-button__appstore:hover {
+    background-color: #152a29;
+}
+
+.box-button__googlestore:active {
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+}
+
+.box-button__googlestore:hover {
+    background-color: #616364;
 }
 
 .box-buttons .box-button__appstore::before {
@@ -71,14 +95,14 @@ body {
     color: #28514F;
     font-family: 'DM Serif Display';
     font-size: 48px;
-    line-height: 55.68px;
+    line-height: 116%;
 }
 
 .main-text {
     margin-top: 38px;
     color: #65727B;
     font-size: 21px;
-    line-height: 31.71px;    
+    line-height: 151%;    
 }
 
 .main-descr {
@@ -123,6 +147,16 @@ body {
 
 .header-nav__item a {
     color: #65727B;
+    transition: all 0.6s;
+}
+
+.header-nav__item:hover a {
+    color: black;
+    text-decoration: underline;
+}
+
+.header-nav__link {
+    line-height: 141%;
 }
 
 .header-nav__link.active {
@@ -130,6 +164,15 @@ body {
     background-color: rgba(101, 114, 123, 0.20);
     border-radius: 30px;
     padding: 8px 20px;
+}
+
+.header-nav__burger {
+    display: none;
+}
+
+.header-nav__burger img {
+    width: 40px;
+    height: 40px;
 }
 
 /* header-content */
@@ -266,6 +309,7 @@ body {
 
 .cards-marks-box {
     display: flex;
+    row-gap: 20px;
     column-gap: 20px;
     justify-content: center;
 }
@@ -276,7 +320,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: #FFF;    
     width: 294px; 
-    height: 230px;   
+    max-height: 230px;   
 }
 
 .cards-marks__item-text {
@@ -371,6 +415,7 @@ body {
     background-color: #F8E6BE;
     display: flex;
     column-gap: 10px;
+    row-gap: 30px;
     width: 960px;
     margin: 0 auto;
 }
@@ -418,7 +463,12 @@ body {
     background-color: #28514F;
     width: 117px;
     padding: 19px 0;
-    border-radius: 0px 40px 40px 0px;;
+    border-radius: 0px 40px 40px 0px;
+    transition: background-color 0.4s ease-in;
+}
+
+.high-fives__form-button:hover {
+    background-color: #152a29;
 }
 
 .high-fives__text-lil {
@@ -430,12 +480,9 @@ body {
 
 /* Footer */
 
-#footer {
+.footer-box {
     padding: 77px 50px;
     border-top: 2px solid rgba(165, 155, 134, 0.20);
-}
-
-.footer-box {
     display: flex;
     align-items: center;
     column-gap: 40px;
@@ -467,6 +514,15 @@ body {
     text-decoration-line: underline;
 }
 
+.footer-box__menu-item {
+    transition: all 0.6s;
+}
+
+.footer-box__menu-item:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .footer-box__menu {
     color: #65727B;
     display: flex;
@@ -479,4 +535,12 @@ body {
     justify-content: flex-end;
     display: flex;
     column-gap: 30px;
+}
+
+.footer-box__soc-icon {
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-box__soc-icon:hover {
+    transform: rotate(360deg) scale(1.3);
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
@@ -17,38 +18,41 @@
                 <div class="header-logo">
                     <img src="./img/header/logo.png" alt="logo">
                 </div>
-                <nav class="header-nav">
+                <nav class="header-nav" id="nav">
                     <ul class="header-nav__list">
-                        <li class="header-nav__item">
+                        <li class="header-nav__item" data-aos="fade-up">
                             <a href="#!" class="header-nav__link active">Home</a>
                         </li>
-                        <li class="header-nav__item">
+                        <li class="header-nav__item" data-aos="fade-up">
                             <a href="#!" class="header-nav__link">About</a>
                         </li>
-                        <li class="header-nav__item">
+                        <li class="header-nav__item" data-aos="fade-up">
                             <a href="#!" class="header-nav__link">Know Your Risks</a>
                         </li>
-                        <li class="header-nav__item">
+                        <li class="header-nav__item" data-aos="fade-up">
                             <a href="#!" class="header-nav__link">For Work</a>
                         </li>
-                        <li class="header-nav__item">
+                        <li class="header-nav__item" data-aos="fade-up">
                             <a href="#!" class="header-nav__link">Journal</a>
                         </li>
-                        <li class="header-nav__item">
+                        <li class="header-nav__item" data-aos="fade-up">
                             <a href="#!" class="header-nav__link">Shop</a>
                         </li>
                     </ul>
+                    <button class="header-nav__burger" id="burger">
+                        <img src="./img/icons/burger-menu-svg.svg" id="burger-image" alt="burger">
+                    </button>
                 </nav>
             </div>
             <!-- header-content -->
             <div class="header-description main-descr">
-                <h1 class="header-description__title main-title">
+                <h1 class="header-description__title main-title" data-aos="zoom-in">
                     Reimagining readiness for life's uncertain moments.
                 </h1>
-                <p class="header-description__text main-text">
+                <p class="header-description__text main-text" data-aos="zoom-in">
                     The app that makes disaster preparedness easy and accessible. Because sometimes tomorrow doesn't look like today.
                 </p>
-                <div class="box-buttons">
+                <div class="box-buttons" data-aos="fade-up" data-aos-duration="1000">
                     <div class="box-button">
                         <a href="#!" class="box-button__appstore">App Store</a>
                     </div>
@@ -57,7 +61,7 @@
                         <span>Join the Waitlist</span>
                     </div>
                 </div>
-                <div class="header-description__cont-img">
+                <div class="header-description__cont-img" data-aos="fade-up" data-aos-duration="2000">
                     <img src="./img/header/mob-header.png" alt="mob-header" class="header-description__img">
                 </div>
             </div>
@@ -67,7 +71,7 @@
         <section id="cards-planned">
             <div class="container">
                 <div class="cards-planned__line-top little-line"></div>
-                <div class="cards-planned__description main-descr">
+                <div class="cards-planned__description main-descr" data-aos="zoom-in">
                     <h1 class="cards-planned__title main-title">
                         The right plan for when things don't go as planned
                     </h1>
@@ -76,7 +80,7 @@
                     </p>
                 </div>
                 <div class="cards-planned-area">
-                    <div class="cards-planned-area__item">
+                    <div class="cards-planned-area__item" data-aos="fade-up">
                         <img src="./img/cards/card-plan.png" alt="card-plan" class="card-planned__img-main">
                         <img src="./img/icons/persons-icon.png" alt="persons-icon" class="card-planned__img-icon">
                         <h2 class="card-planned__title">Create your family's emergency plan</h2>
@@ -84,7 +88,7 @@
                             Our app is tailored to you, your family and your little dog, too. We tell you what you need to stay safe from hurricanes to wildfires and everything in between.
                         </p>
                     </div>
-                    <div class="cards-planned-area__item">
+                    <div class="cards-planned-area__item" data-aos="fade-up">
                         <img src="./img/cards/even-offline-card.png" alt="even-offline-card" class="card-planned__img-main">
                         <img src="./img/icons/box-icon.png" alt="box-icon" class="card-planned__img-icon">
                         <h2 class="card-planned__title">Access and share important information, even offline</h2>
@@ -92,7 +96,7 @@
                             View critical information, family plans, and documents at the push of a button, both online and offline - no worries if cell towers go out.
                         </p>
                     </div>
-                    <div class="cards-planned-area__item">
+                    <div class="cards-planned-area__item" data-aos="fade-up">
                         <img src="./img/cards/strikes-card.png" alt="strikes-card" class="card-planned__img-main">
                         <img src="./img/icons/atention.png" alt="atention" class="card-planned__img-icon">
                         <h2 class="card-planned__title">Know exactly what to do when an emergency strikes</h2>
@@ -100,7 +104,7 @@
                             When disasters happen, harbor automatically activates your readiness plan and sends you personalized, on-demand info when it matters the most.
                         </p>
                     </div>
-                    <div class="cards-planned-area__item">
+                    <div class="cards-planned-area__item" data-aos="fade-up">
                         <img src="./img/cards/assessments-card.png" alt="assessments-card" class="card-planned__img-main">
                         <img src="./img/icons/enter-icon.png" alt="enter-icon" class="card-planned__img-icon">
                         <h2 class="card-planned__title">Get peace-of-mind with automatic risk assessments</h2>
@@ -114,7 +118,7 @@
         </section>
         <section id="cards-marks">
             <div class="container">
-                <div class="cards-marks__description main-descr">
+                <div class="cards-marks__description main-descr" data-aos="zoom-in">
                     <h1 class="cards-marks__title main-title">
                         We're ready, are you?
                     </h1>
@@ -123,7 +127,7 @@
                     </p>
                 </div>
                 <div class="cards-marks-box">
-                    <div class="cards-marks__item">
+                    <div class="cards-marks__item" data-aos="fade-down" data-aos-easing="ease-in-out">
                         <p class="cards-marks__item-text">
                             It's beautiful, easy to use, and is genuinely growing my confidence for crisis preparation.
                         </p>
@@ -141,7 +145,7 @@
                             <h6 class="cards-marks__author">Antonea<br><span>iOS Beta Tester</span></h6>
                         </div>
                     </div>
-                    <div class="cards-marks__item">
+                    <div class="cards-marks__item" data-aos="fade-down" data-aos-easing="ease-in-out">
                         <p class="cards-marks__item-text">
                             This app is something I’ve been hoping for for a while now. So I’m excited to be beta testing it.
                         </p>
@@ -159,7 +163,7 @@
                             <h6 class="cards-marks__author">Kathryn<br><span>iOS Beta Tester</span></h6>
                         </div>
                     </div>
-                    <div class="cards-marks__item">
+                    <div class="cards-marks__item" data-aos="fade-down" data-aos-easing="ease-in-out">
                         <p class="cards-marks__item-text">
                             It’s a great app and I can’t wait to use it more and see what all content you add.
                         </p>
@@ -186,7 +190,7 @@
                 <img src="./img/back-section/like.png" alt="like" class="box-finger__img">
             </div>
             <div class="container">
-                <div class="mission__description main-descr">
+                <div class="mission__description main-descr" data-aos="zoom-in">
                     <h1 class="mission__title main-title">
                         Our mission is to encourage readiness for all
                     </h1>
@@ -195,12 +199,12 @@
                         A little bit of effort with a big payoff.
                     </p>
                 </div>
-                <button class="mission-button">Learn more about us</button>
+                <button class="mission-button" data-aos="zoom-in" data-aos-delay="400">Learn more about us</button>
             </div>
         </section>
         <section id="stay-one-step">
             <div class="container">
-                <div class="stay-one-step-box">
+                <div class="stay-one-step-box" data-aos="zoom-out">
                     <div class="stay-one-step-box__description">
                         <h2 class="stay-one-step-box__title">Stay one step<br>ahead with harbor</h2>
                         <div class="stay-one-step-buttons box-buttons">
@@ -222,25 +226,25 @@
         <section id="high-fives">
             <div class="container">
                 <div class="high-fives__description main-descr">
-                    <h1 class="high-fives__title main-title">
+                    <h1 class="high-fives__title main-title" data-aos="zoom-in">
                         Join harbor high fives
                     </h1>
-                    <p class="high-fives__text main-text">
+                    <p class="high-fives__text main-text" data-aos="zoom-in">
                         Up high. Down low. Tips on how to find your way through any disaster in the best way possible: together. And be the first in line for Android.
                     </p>
-                    <form action="" class="high-fives__form">
+                    <form action="" class="high-fives__form" data-aos="zoom-in" data-aos-delay="400">
                         <input type="text" class="high-fives__form-input" placeholder="Email address">
                         <input type="button" class="high-fives__form-button" value="Sign Up">
                     </form>
-                    <p class="high-fives__text-lil">Our commitment to protecting your Data Privacy</p>
+                    <p class="high-fives__text-lil" data-aos="zoom-in" data-aos-delay="400">Our commitment to protecting your Data Privacy</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer id="footer">
+    <footer id="footer" data-aos="fade-up">
         <div class="container">
             <div class="footer-box">
-                <div class="footer-box__copy-logo">
+                <div class="footer-box__copy-logo foot-item">
                     <img src="./img/header/logo.png" alt="logo">
                     <p class="footer-box__copyright">© 2020 harbor. All rights reserved</p>
                     <ul class="footer-box__contacts-list">
@@ -252,12 +256,12 @@
                         <li class="footer-box__cont-item"><a href="#!" class="footer-box__cont-item">Shop</a></li>
                     </ul>
                 </div>
-                <ul class="footer-box__menu">
+                <ul class="footer-box__menu foot-item">
                     <li class="footer-box__menu-item">Home</li>
                     <li class="footer-box__menu-item">About</li>
                     <li class="footer-box__menu-item">Risks</li>
                 </ul>
-                <ul class="footer-box__social-icons">
+                <ul class="footer-box__social-icons foot-item">
                     <li class="footer-box__soc-icon">
                         <img src="./img/icons/social-icons/twitter.png" alt="twitter">
                     </li>
@@ -271,5 +275,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
